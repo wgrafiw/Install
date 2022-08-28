@@ -1,7 +1,8 @@
-apt-get install curl
-apt-get install unzip
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+apt install curl
+apt install unzip
+apt install wget
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+unzip ngrok-stable-linux-amd64.zip
 ./ngrok authtoken 1uGjsrrybf6VNQSBvHMeVIEYijd_5e2Y7ZLpGKGJo5c1Cqhvd 
 nohup ./ngrok tcp 22 &>/dev/null &
 echo Tải xuống tệp từ sever
@@ -14,7 +15,6 @@ echo "Ctrl+C để Copy"
 echo "Đợi 1-2 Phút để hoàn thành thiết lập"
 echo "Không đóng tab này"
 echo "hãy ủng hộ Hoàng vtmc xin cảm ơn"
-apt-get install curl
 curl https://rclone.org/install.sh
 bash install.sh
 apt-get install fuse
